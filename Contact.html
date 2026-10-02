@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portofolio - Kontak Saya</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .form-kontak {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-top: 15px;
+            max-width: 500px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .btn-kirim {
+            background-color: #d35400;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .btn-kirim:hover {
+            background-color: #e67e22;
+        }
+
+        .info-kontak {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .info-kontak a {
+            color: #d35400;
+            text-decoration: none;
+        }
+
+        .info-kontak a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="sidebar">
+            <img src="foto.jpg" alt="Foto Raditya Sinatrya Putra" style="border: 3px solid #d35400;">
+            
+            <h3>Radit</h3>
+            <p>Teknik Informatika</p>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="portfolio.html">Portofolio</a></li>
+                    <li><a href="contact.html" class="active">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="konten">
+            <h1>Hubungi Saya</h1>
+            <p>Silakan tinggalkan pesan atau hubungi saya melalui informasi di bawah ini.</p>
+
+            <hr>
+            <br>
+
+            <h2 class="sub-judul">Informasi Kontak</h2>
+            <div class="info-kontak">
+                <p><strong>Email:</strong> raditya.sinatrya@student.paramadina.ac.id</p>
+                <p><strong>Kampus:</strong> Universitas Paramadina, Jakarta</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Rexyn2708" target="_blank">github.com/Rexyn2708</a></p>
+            </div>
+
+            <br>
+
+            <h2 class="sub-judul">Kirim Pesan</h2>
+            <form action="#" method="post" class="form-kontak">
+                
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Alamat Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan email Anda..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="kategori">Kategori Pesan:</label>
+                    <select id="kategori" name="kategori">
+                        <option value="tugas">Diskusi Tugas / Kuliah</option>
+                        <option value="proyek">Tawaran Proyek / Kolaborasi</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="pesan">Pesan Anda:</label>
+                    <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan pesan di sini..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-kirim">Kirim Pesan</button>
+            </form>
+
+            <br><br>
+
+            <div class="footer">
+                <p>&copy; 2026 Raditya Sinatrya Putra - Universitas Paramadina</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
