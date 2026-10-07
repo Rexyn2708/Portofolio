@@ -2,56 +2,91 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Portofolio - Raditya Sinatrya Putra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Raditya Sinatrya Putra</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        
-        <div class="sidebar">
-            <img src="foto.jpg" alt="Foto Raditya Sinatrya Putra" style="border: 3px solid #d35400;">
-            
-            <h3>Radit</h3>
-            <p>Teknik Informatika</p>
+<div class="container">
 
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="active">Beranda</a></li>
-                    <li><a href="portfolio.html">Portofolio</a></li>
-                    <li><a href="contact.html">Kontak</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="navbar">
+        <div class="nav-brand">Radit | Portfolio</div>
+        <nav class="nav-menu">
+            <a href="index.html" class="active">Profil</a>
+            <a href="projects.html">Proyek</a>
+            <a href="contact.html">Kontak</a>
+        </nav>
+    </header>
 
-        <div class="konten">
-            <h1>Selamat Datang!</h1>
-            <p>Portofolio Pribadi Raditya Sinatrya Putra</p>
-
-            <hr>
-            <br>
-
-            <h2 class="sub-judul">Tentang Saya</h2>
-            <p>
-                Halo! Saya <strong>Raditya Sinatrya Putra</strong> (biasa dipanggil Radit), mahasiswa Teknik Informatika di Universitas Paramadina. Sebagai orang yang tertarik dengan dunia teknologi, saya suka ngulik gimana sebuah sistem atau tampilan website dibuat dari baris-baris kode. Di luar jam kuliah, saya lagi nikmatin proses belajar hal-hal baru di bidang frontend development dan logika pemrograman.</p>
-            <br>
-
-            <h2 class="sub-judul">Daftar Keahlian (Skills)</h2>
-            <ul class="list-keahlian">
-                <li>HTML5 & CSS3 Dasar</li>
-                <li>Dasar Pemrograman (Python / C++)</li>
-                <li>Penggunaan Microsoft Office & Google Workspace</li>
-                <li>Kerjasama Tim & Komunikasi</li>
-            </ul>
-
-            <br><br>
-
-            <div class="footer">
-                <p>&copy; 2026 Raditya Sinatrya Putra - Universitas Paramadina</p>
+    <main class="konten-utama">
+        <section class="profil-utama">
+            <div class="foto-profil">
+                <img src="foto.jpeg" alt="Raditya Sinatrya Putra">
             </div>
-        </div>
+            <div class="teks-profil">
+                <span class="badge">Mahasiswa Teknik Informatika</span>
+                <h1>Raditya Sinatrya Putra</h1>
+                <p class="bio-singkat">
+                    Mahasiswa S1 Teknik Informatika di Universitas Paramadina dengan minat pada pengembangan web, keamanan siber, dan Internet of Things (IoT).
+                </p>
+                <a href="contact.html" class="btn-primary">Kontak Saya</a>
+            </div>
+        </section>
 
-    </div>
+        <section>
+            <h2 class="sub-judul">Tentang Saya</h2>
+            <p style="font-size: 14px; margin-bottom: 10px;">
+                Halo! Saya Raditya Sinatrya Putra, biasa dipanggil Radit. Saat ini saya sedang menempuh pendidikan S1 Teknik Informatika di Universitas Paramadina. Saya memiliki ketertarikan dalam dunia pengembangan web, keamanan siber, dan Internet of Things (IoT).
+            </p>
+            <p style="font-size: 14px; margin-bottom: 10px;">
+                Saya fokus mendalami teknologi web seperti HTML, CSS, JavaScript, pengolahan basis data menggunakan MongoDB dan Express/Node.js, serta dasar-dasar keamanan sistem.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="sub-judul">Daftar Keahlian</h2>
+            <ul class="list-keahlian">
+                <li><strong>Backend & Database:</strong> Node.js, MongoDB, FastAPI</li>
+                <li><strong>Bahasa Pemrograman:</strong> C++, Python, HTML(basic), CSS(basic), JavaScript(basic)</li>
+                <li><strong>Tools:</strong> Git, GitHub, VS Code</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="sub-judul">Pendidikan</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jenjang</th>
+                        <th>Instansi</th>
+                        <th>Jurusan</th>
+                        <th>Tahun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SMA / MA</td>
+                        <td>SMAN 113 Jakarta</td>
+                        <td>IPA</td>
+                        <td>2022 - 2025</td>
+                    </tr>
+                    <tr>
+                        <td>Perguruan Tinggi</td>
+                        <td>Universitas Paramadina</td>
+                        <td>Teknik Informatika</td>
+                        <td>2025 - Sekarang</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Raditya Sinatrya Putra - Universitas Paramadina</p>
+    </footer>
+
+</div>
 
 </body>
 </html>
