@@ -45,7 +45,7 @@
 
     <main class="container py-5">
         
-        <section id="beranda" class="mb-5 text-center text-md-start">
+        <div id="beranda" class="mb-5 text-center text-md-start">
             <div class="row align-items-center g-4">
                 <div class="col-md-3 text-center">
                     <img src="foto.jpeg" alt="Raditya Sinatrya Putra" class="foto-profil shadow">
@@ -59,11 +59,11 @@
                     <a href="#kontak" class="btn btn-primary">Kontak Saya</a>
                 </div>
             </div>
-        </section>
+        </div>
 
         <hr class="my-5">
 
-        <section id="tentang" class="mb-5">
+        <div id="tentang" class="mb-5">
             <h2 class="h3 fw-bold border-bottom pb-2 mb-3">Tentang Saya</h2>
             <p>
                 Halo! Saya Raditya Sinatrya Putra, biasa dipanggil Radit. Saat ini saya sedang menempuh pendidikan S1 Teknik Informatika di Universitas Paramadina. Saya memiliki ketertarikan dalam dunia pengembangan web, keamanan siber, dan Internet of Things (IoT).
@@ -106,53 +106,55 @@
                     </tbody>
                 </table>
             </div>
-        </section>
+        </div>
 
         <hr class="my-5">
 
-        <section id="proyek" class="mb-5">
+        <div id="proyek" class="mb-5">
             <h2 class="h3 fw-bold border-bottom pb-2 mb-4">Proyek Saya</h2>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm">
-                        <img src="shuttlezone.png" class="card-img-top" alt="ShuttleZone" style="height: 180px; object-fit: cover;">
+                        <img src="shuttlezone.png" class="card-img-top" alt="ShuttleZone" style="height: 180px; object-fit: cover;" onerror="this.src='foto.jpeg'">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">ShuttleZone</h5>
-                            <p class="card-text text-muted">Portal web bulutangkis yang dibangun menggunakan FastAPI dan MongoDB.</p>
+                            <p class="card-text text-muted">Portal web pemesanan dan informasi sistem olahraga bulutangkis berbasis Python & MongoDB.</p>
                         </div>
                         <div class="card-footer bg-white border-0 pb-3">
-                            <a href="https://github.com/Rexyn2708/Portofolio" target="_blank" class="btn btn-sm btn-outline-primary">Lihat Repository</a>
+                            <a href="https://github.com/Rexyn2708/ShuttleZone" target="_blank" class="btn btn-sm btn-outline-primary">Detail Proyek</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm">
+                        <img src="footcardgacha.png" class="card-img-top" alt="Footcard Gacha" style="height: 180px; object-fit: cover;" onerror="this.src='foto.jpeg'">
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">Sistem IoT Perkebunan</h5>
-                            <p class="card-text text-muted">Monitoring kelembaban tanah dan suhu udara berbasis sensor ESP32.</p>
+                            <h5 class="card-title fw-bold">Footcard Gacha</h5>
+                            <p class="card-text text-muted">Aplikasi web gim gacha koleksi kartu sepak bola berbasis Flask (Python) dengan fitur integrasi pembayaran.</p>
                         </div>
                         <div class="card-footer bg-white border-0 pb-3">
-                            <a href="#" class="btn btn-sm btn-outline-primary">Detail Proyek</a>
+                            <a href="https://github.com/Rexyn2708/footcard-gacha.git" target="_blank" class="btn btn-sm btn-outline-primary">Detail Proyek</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm">
+                        <img src="money-management-kalkulator.png" class="card-img-top" alt="Money Management Calculator" style="height: 180px; object-fit: cover;" onerror="this.src='foto.jpeg'">
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">Website Portofolio</h5>
-                            <p class="card-text text-muted">Website akademis yang dibangun dengan HTML5, CSS3, dan Bootstrap 5.</p>
+                            <h5 class="card-title fw-bold">Money Management Calculator</h5>
+                            <p class="card-text text-muted">Proyek eksperimen pribadi yang dibuat secara iseng untuk membantu menghitung ukuran posisi (lot) ideal dalam trading secara presisi. Alat berbasis web ini memproses batas kerugian, rencana trading (buy point, stop loss, target profit), dan modal awal untuk menjaga kedisiplinan risk management.</p>
                         </div>
                         <div class="card-footer bg-white border-0 pb-3">
-                            <a href="#" class="btn btn-sm btn-outline-primary">Detail Proyek</a>
+                            <a href="https://github.com/Rexyn2708/money-management-calculator.git" target="_blank" class="btn btn-sm btn-outline-primary">Detail Proyek</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <hr class="my-5">
 
-        <section id="kontak" class="mb-5">
+        <div id="kontak" class="mb-5">
             <h2 class="h3 fw-bold border-bottom pb-2 mb-4">Kontak Saya</h2>
             <div class="row g-4">
                 <div class="col-md-5">
@@ -180,7 +182,7 @@
                     </form>
                 </div>
             </div>
-        </section>
+        </div>
 
     </main>
 
