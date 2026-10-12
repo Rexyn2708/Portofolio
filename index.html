@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,62 +7,56 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white text-gray-900 font-sans antialiased">
-
     <header class="border-b border-gray-100">
         <div class="max-w-3xl mx-auto px-4 h-14 flex items-center justify-between text-sm">
-            <a href="#" class="font-semibold">Radit</a>
+            <a href="index.html" class="font-semibold">Radit</a>
             <nav class="flex gap-4 text-gray-500">
-                <a href="#beranda" class="hover:text-black">Beranda</a>
-                <a href="#tentang" class="hover:text-black">Tentang</a>
-                <a href="#proyek" class="hover:text-black">Proyek</a>
-                <a href="#kontak" class="hover:text-black">Kontak</a>
+                <a href="index.html" class="text-black font-medium">Beranda</a>
+                <a href="projects.html" class="hover:text-black">Proyek</a>
+                <a href="contact.html" class="hover:text-black">Kontak</a>
             </nav>
         </div>
     </header>
-
-    <main class="max-w-3xl mx-auto px-4 py-10 space-y-12">
-
-        <div id="beranda" class="flex items-center gap-6">
-            <img src="foto.jpeg" alt="Raditya Sinatrya Putra" class="w-20 h-20 rounded-full object-cover flex-shrink-0">
+    <main class="max-w-3xl mx-auto px-4 py-10 space-y-10">
+        <div class="flex items-center gap-6">
+            <!-- ganti kalau nama file fotonya beda -->
+            <img src="foto.jpeg" alt="Foto Radit" class="w-20 h-20 rounded-full object-cover shrink-0">
             <div>
                 <h1 class="text-xl font-bold">Raditya Sinatrya Putra</h1>
-                <p class="text-sm text-gray-500 mt-1">Mahasiswa Teknik Informatika — Universitas Paramadina</p>
-                <p class="text-sm text-gray-600 mt-2">Fokus pada web development, keamanan siber, dan Internet of Things (IoT).</p>
+                <p class="text-sm text-gray-500 mt-1">Mahasiswa Teknik Informatika, Universitas Paramadina</p>
+                <p class="text-sm text-gray-600 mt-2">Fokus di web development, keamanan siber, dan Internet of Things (IoT).</p>
             </div>
         </div>
-
-        <div id="tentang" class="pt-6 border-t border-gray-100 space-y-6">
+        <div class="pt-6 border-t border-gray-100 space-y-5">
             <h2 class="text-lg font-bold">Tentang Saya</h2>
             <p class="text-sm text-gray-600 leading-relaxed">
-                Halo, saya Radit. Saat ini sedang menempuh studi S1 Teknik Informatika di Universitas Paramadina. Saya mendalami teknologi web seperti HTML, CSS, JavaScript, basis data MongoDB, Express/Node.js, serta dasar-dasar keamanan sistem.
+                Halo, saya Radit, lagi kuliah S1 Teknik Informatika di Universitas Paramadina. Saya belajar teknologi web seperti HTML, CSS, JavaScript, basis data MongoDB, Express/Node.js, serta dasar-dasar keamanan sistem.
             </p>
-
             <div>
                 <h3 class="text-sm font-semibold mb-2">Keahlian</h3>
                 <p class="text-sm text-gray-600">Node.js, MongoDB, FastAPI, C++, Python, JavaScript, HTML/CSS, Git, GitHub</p>
             </div>
-
-<div>
-                <h3 class="text-sm font-semibold mb-3">Pendidikan</h3>
+            <div>
+                <h3 class="text-sm font-semibold mb-2">Pendidikan</h3>
                 <div class="overflow-x-auto border border-gray-200 rounded">
                     <table class="w-full text-left text-sm">
-                        <thead class="bg-gray-50 border-b border-gray-200 font-medium text-gray-700">
+                        <thead class="bg-gray-50 border-b border-gray-200 text-gray-700">
                             <tr>
-                                <th class="py-2 px-3">Jenjang</th>
-                                <th class="py-2 px-3">Instansi</th>
-                                <th class="py-2 px-3">Jurusan</th>
-                                <th class="py-2 px-3">Tahun</th>
+                                <th class="py-2 px-3 font-medium">Tingkat</th>
+                                <th class="py-2 px-3 font-medium">Nama Sekolah / Kampus</th>
+                                <th class="py-2 px-3 font-medium">Jurusan</th>
+                                <th class="py-2 px-3 font-medium">Tahun</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-gray-100 text-gray-600">
                             <tr>
-                                <td class="py-2 px-3 font-medium text-gray-900">SMA / MA</td>
+                                <td class="py-2 px-3 text-gray-900">SMA / MA</td>
                                 <td class="py-2 px-3">SMAN 113 Jakarta</td>
                                 <td class="py-2 px-3">IPA</td>
                                 <td class="py-2 px-3">2022 - 2025</td>
                             </tr>
                             <tr>
-                                <td class="py-2 px-3 font-medium text-gray-900">Perguruan Tinggi</td>
+                                <td class="py-2 px-3 text-gray-900">Perguruan Tinggi</td>
                                 <td class="py-2 px-3">Universitas Paramadina</td>
                                 <td class="py-2 px-3">Teknik Informatika</td>
                                 <td class="py-2 px-3">2025 - Sekarang</td>
@@ -72,66 +66,9 @@
                 </div>
             </div>
         </div>
-
-        <div id="proyek" class="pt-6 border-t border-gray-100 space-y-6">
-            <h2 class="text-lg font-bold">Proyek</h2>
-            <div class="space-y-6">
-                
-                <div class="flex gap-4 items-start">
-                    <img src="shuttlezone.png" alt="ShuttleZone" class="w-24 h-16 rounded object-cover flex-shrink-0">
-                    <div class="space-y-1 w-full">
-                        <div class="flex items-center justify-between">
-                            <h3 class="text-sm font-semibold">ShuttleZone</h3>
-                            <a href="https://github.com/Rexyn2708/ShuttleZone" target="_blank" class="text-xs text-gray-400 hover:text-black">GitHub &rarr;</a>
-                        </div>
-                        <p class="text-sm text-gray-600">Portal web pemesanan dan informasi sistem olahraga bulutangkis berbasis Python & MongoDB.</p>
-                    </div>
-                </div>
-
-                <div class="flex gap-4 items-start">
-                    <img src="footcardgacha.png" alt="Footcard Gacha" class="w-24 h-16 rounded object-cover flex-shrink-0">
-                    <div class="space-y-1 w-full">
-                        <div class="flex items-center justify-between">
-                            <h3 class="text-sm font-semibold">Footcard Gacha</h3>
-                            <a href="https://github.com/Rexyn2708/footcard-gacha.git" target="_blank" class="text-xs text-gray-400 hover:text-black">GitHub &rarr;</a>
-                        </div>
-                        <p class="text-sm text-gray-600">Aplikasi web gim gacha koleksi kartu sepak bola berbasis Flask dengan fitur integrasi pembayaran.</p>
-                    </div>
-                </div>
-
-                <div class="flex gap-4 items-start">
-                    <img src="money-management-kalkulator.png" alt="Money Management Calculator" class="w-24 h-16 rounded object-cover flex-shrink-0">
-                    <div class="space-y-1 w-full">
-                        <div class="flex items-center justify-between">
-                            <h3 class="text-sm font-semibold">Money Management Calculator</h3>
-                            <a href="https://github.com/Rexyn2708/money-management-calculator.git" target="_blank" class="text-xs text-gray-400 hover:text-black">GitHub &rarr;</a>
-                        </div>
-                        <p class="text-sm text-gray-600">Proyek eksperimen pribadi berbasis web untuk menghitung ukuran posisi (lot) ideal dalam trading secara presisi berdasarkan modal, rencana trading, dan batas risk management.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div id="kontak" class="pt-6 border-t border-gray-100 space-y-6">
-            <h2 class="text-lg font-bold">Kontak</h2>
-            
-            <div class="text-sm space-y-1 text-gray-600">
-                <p>Email: radityasinatryaputra@gmail.com</p>
-                <p>WhatsApp: +62 852-1765-9556</p>
-                <p>GitHub: github.com/Rexyn2708</p>
-            </div>
-
-            <form action="#" method="POST" class="space-y-3 text-sm max-w-md">
-                <input type="text" id="nama" required placeholder="Nama" class="w-full px-3 py-1.5 border border-gray-200 rounded focus:outline-none focus:border-gray-400">
-                <input type="email" id="email" required placeholder="Email" class="w-full px-3 py-1.5 border border-gray-200 rounded focus:outline-none focus:border-gray-400">
-                <textarea id="pesan" rows="3" required placeholder="Pesan" class="w-full px-3 py-1.5 border border-gray-200 rounded focus:outline-none focus:border-gray-400"></textarea>
-                <button type="submit" class="px-4 py-1.5 bg-black text-white text-xs rounded hover:bg-gray-800">
-                    Kirim
-                </button>
-            </form>
-        </div>
-
     </main>
+    <footer class="border-t border-gray-100 py-6 text-center text-xs text-gray-400">
+        &copy; 2026 Raditya Sinatrya Putra
+    </footer>
 </body>
 </html>
