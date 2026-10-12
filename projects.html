@@ -4,66 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyek - Raditya Sinatrya Putra</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-<div class="container">
-    <header class="navbar">
-        <div class="nav-brand">Radit | Portfolio</div>
-        <nav class="nav-menu">
-            <a href="index.html">Profil</a>
-            <a href="projects.html" class="active">Proyek</a>
-            <a href="contact.html">Kontak</a>
-        </nav>
-    </header>
-    <main class="konten-utama">
-        <h1 class="judul-halaman">Proyek Saya</h1>
-        <p class="sub-informasi">Beberapa proyek web yang pernah saya kerjakan:</p>
-        <div class="proyek-grid">
-            <div class="proyek-card">
-                <img src="shuttlezone.png" alt="ShuttleZone" onerror="this.src='foto.jpeg'">
-                <h3>ShuttleZone - Badminton Web Portal</h3>
-                <p class="deskripsi-proyek">
-                    Platform informasi bulutangkis berbasis web yang dikerjakan bersama tim. Isinya jadwal pertandingan, skor langsung, profil tim, dan berita terkini.
-                </p>
-                <div class="label-teknologi">
-                    <span>Python</span>
-                    <span>FastAPI</span>
-                    <span>MongoDB</span>
-                </div>
-                <a href="https://github.com/Rexyn2708/ShuttleZone" target="_blank" class="link-github">Lihat di GitHub &raquo;</a>
-            </div>
-            <div class="proyek-card">
-                <img src="footcardgacha.png" alt="Footcard Gacha" onerror="this.src='foto.jpeg'">
-                <h3>Footcard Gacha</h3>
-                <p class="deskripsi-proyek">
-                    Gim gacha koleksi kartu sepak bola berbasis Flask (Python), lengkap dengan integrasi sistem pembayaran.
-                </p>
-                <div class="label-teknologi">
-                    <span>Python</span>
-                    <span>Flask</span>
-                    <span>JavaScript</span>
-                </div>
-                <a href="https://github.com/Rexyn2708/footcard-gacha" target="_blank" class="link-github">Lihat di GitHub &raquo;</a>
-            </div>
-            <div class="proyek-card">
-                <img src="moneymanagement.png" alt="Money Management Calculator" onerror="this.src='foto.jpeg'">
-                <h3>Money Management Calculator</h3>
-                <p class="deskripsi-proyek">
-                    Kalkulator sederhana untuk membantu mengatur risiko dan ukuran posisi saat trading.
-                </p>
-                <div class="label-teknologi">
-                    <span>HTML/CSS</span>
-                    <span>JavaScript</span>
-                    <span>Trading Tool</span>
-                </div>
-                <a href="https://github.com/Rexyn2708/money-management-calculator" target="_blank" class="link-github">Lihat di GitHub &raquo;</a>
-            </div>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased">
+
+    <header class="border-b border-gray-200 bg-white">
+        <div class="max-w-4xl mx-auto px-4 h-14 flex items-center justify-between text-sm">
+            <a href="index.html" class="font-semibold">Radit</a>
+            <nav class="flex gap-4 text-gray-500">
+                <a href="index.html" class="hover:text-black">Beranda</a>
+                <a href="projects.html" class="text-black font-medium">Proyek</a>
+                <a href="contact.html" class="hover:text-black">Kontak</a>
+            </nav>
         </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-10 space-y-8">
+
+        <h1 class="text-xl font-bold">Proyek Saya</h1>
+        
+        <div class="space-y-8">
+            
+            <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm flex flex-col md:flex-row gap-6 items-center">
+                <div class="flex-1 space-y-2">
+                    <h2 class="text-lg font-bold">ShuttleZone</h2>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Portal web pemesanan dan informasi sistem olahraga bulutangkis berbasis Python & MongoDB.
+                    </p>
+                    <div class="pt-2">
+                        <a href="https://github.com/Rexyn2708/ShuttleZone" target="_blank" class="text-xs font-semibold text-blue-600 hover:underline">Lihat di GitHub &raquo;</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-80 h-48 flex-shrink-0 overflow-hidden rounded-md border border-gray-100">
+                    <img src="shuttlezone.png" alt="ShuttleZone" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm flex flex-col md:flex-row gap-6 items-center">
+                <div class="flex-1 space-y-2">
+                    <h2 class="text-lg font-bold">Footcard Gacha</h2>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Gim gacha koleksi kartu sepak bola berbasis Flask (Python), lengkap dengan integrasi sistem pembayaran.
+                    </p>
+                    <div class="pt-2">
+                        <a href="https://github.com/Rexyn2708/footcard-gacha.git" target="_blank" class="text-xs font-semibold text-blue-600 hover:underline">Lihat di GitHub &raquo;</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-80 h-48 flex-shrink-0 overflow-hidden rounded-md border border-gray-100">
+                    <img src="footcardgacha.png" alt="Footcard Gacha" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm flex flex-col md:flex-row gap-6 items-center">
+                <div class="flex-1 space-y-2">
+                    <h2 class="text-lg font-bold">Color Palette Picker</h2>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Buat kombinasi warna harmonis dari satu warna dasar, lalu ekspor sebagai variabel CSS, Hex, atau RGB.
+                    </p>
+                    <div class="pt-2">
+                        <a href="https://github.com/Rexyn2708/color-palette-picker.git" target="_blank" class="text-xs font-semibold text-blue-600 hover:underline">Lihat di GitHub &raquo;</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-80 h-48 flex-shrink-0 overflow-hidden rounded-md border border-gray-100">
+                    <img src="colorpalettepicker.png" alt="Color Palette Picker" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+        </div>
+
     </main>
-    <footer class="footer">
-        <p>&copy; 2026 Raditya Sinatrya Putra - Universitas Paramadina</p>
+
+    <footer class="border-t border-gray-200 py-6 text-center text-xs text-gray-400 bg-white mt-12">
+        <p>&copy; 2026 Raditya Sinatrya Putra</p>
     </footer>
-</div>
+
 </body>
 </html>
